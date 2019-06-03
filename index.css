@@ -1,0 +1,29 @@
+#lmenu
+{
+    background-color: ;
+    font-family: sans-serif;
+    font-size: 18px;
+    word-spacing: 30px; 
+}
+
+
+body
+{
+    background-color:antiquewhite;
+    
+}
+
+#mmenu
+{
+     word-spacing: 180px;
+     font-size:30px;
+     background-color:red;
+     padding: 10px 5px 10px 5px;
+}
+
+#search
+{
+   margin:200px;
+   padding-left: 350px;
+   font-size: 20px;
+}

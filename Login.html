@@ -1,0 +1,91 @@
+<!doctype html>
+
+<html>
+<head>
+<title>Registration</title>
+<style>
+
+.center {
+display:block;
+margin-left:auto;
+margin-right:auto;
+}
+
+.for {color:silver; background-color:black;}
+</style>
+
+
+<script type="text/javascript">
+function  validate()
+{
+var un=document.getElementById("un");
+var pass=document.getElementById("pass");
+if(un.value.trim()=="")
+{
+un.style.border = "solid 3px red";
+document.getElementById("iun")
+.style.visibility="visible";
+return false;
+}
+else if(pass.value.trim()=="")
+{
+pass.style.border = "solid 3px red";
+document.getElementById("ipass").style.visibility="visible";
+alert("Blank Password ");
+return false;
+}
+else if(pass.value.trim().length<6)
+{
+pass.style.border = "solid 3px red";
+document.getElementById("ipass").style.visibility="visible";
+alert("Password too short");
+return false;
+}
+else {
+return true;
+}
+}
+</script>
+
+
+
+
+</head>
+<body>
+<h1 align="center">REGISTRATION FORM</h1>
+<img src="download.jpg" class="center">
+<div class="for">
+<table>
+
+<fieldset>
+
+<legend align="center">Sign up</legend>
+
+<form  onsubmit="return validate();" method="post" action="access.php">
+<input id="un" placeholder="Username" name="uname" type="text"/>
+<label id="iun" style="color:red;visibility:hidden;">Please enter valid username</label>
+
+
+<br>
+
+<input id="pass"  placeholder="Password" name="passw"type="password"/>
+<label id="ipass" style="color:red;visibility:hidden;">Please enter valid Password</label>
+
+
+
+<br>
+
+
+<input type="submit" name="Login" value="Submit">
+
+
+<input type="reset" name="reset" value="reset">
+
+
+</form>
+</fieldset>
+</table>
+</div>
+</body>
+</html>
+
